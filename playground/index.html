@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Playground — Mostafa Khaled</title>
+    <meta
+      name="description"
+      content="Five small games by Mostafa Khaled: play my work on a piano, GPS Snake, Bug Squash, Stack Memory and Commit Typer."
+    />
+    <link rel="canonical" href="https://senkop.github.io/playground/" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://senkop.github.io/playground/" />
+    <meta property="og:title" content="Playground — Mostafa Khaled" />
+    <meta property="og:description" content="Five small games, each a nod to something I build at work." />
+    <meta property="og:image" content="https://senkop.github.io/og.png" />
+    <meta name="theme-color" content="#0b0d10" />
+
+    <!-- Resolve the theme before first paint (saved choice, else the OS) so nothing flashes -->
+    <script>
+      try {
+        var t = localStorage.getItem('theme')
+        if (t !== 'light' && t !== 'dark') t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+        document.documentElement.dataset.theme = t
+      } catch (e) {
+        document.documentElement.dataset.theme = 'dark'
+      }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Schibsted+Grotesk:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" crossorigin src="/assets/playground-BzVqKN6i.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/global-CWDZLnIo.js">
+    <link rel="stylesheet" crossorigin href="/assets/global-CFKwLc1b.css">
+    <link rel="stylesheet" crossorigin href="/assets/playground-CMXTn0k_.css">
+  </head>
+  <body>
+    <noscript>The playground needs JavaScript.</noscript>
+    <div id="root"></div>
+  </body>
+</html>
